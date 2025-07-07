@@ -1,7 +1,10 @@
 from flask import Flask
+
 app = Flask(__name__)
+
 @app.route('/')
 def home():
-    return "<h1> Hello,this is the latest version of the Flask app!</h1>
-if __name__ =='__main__':
-    app.run(host='0.0.0.0',port=5000)
+    return "<h1> Hello, this is the latest version of the Flask app!</h1>"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
